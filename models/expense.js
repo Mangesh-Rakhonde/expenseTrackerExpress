@@ -8,8 +8,8 @@ class Expense {
       title: { type: String, required: true },
       amount: { type: Number, required: true },
       category: { type: String, enum: ['Food', 'Travel', 'Bills','EMI','Rent','Shopping', 'Others'], required: true },
-      date: { type: Date, default: Date.now },
-      note: { type: String },
+      date: { type: Date, default: Date.now }
+     
     });
 
     this.model = mongoose.model('Expense', expenseSchema);
